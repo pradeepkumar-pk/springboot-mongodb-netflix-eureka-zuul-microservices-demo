@@ -33,14 +33,15 @@ public class MovieResource {
 		return movie;
 	}
 	
-	@GetMapping("/getAllMovies")
-	public Movie getMovies() {
-		return (Movie) movieRepository.findAll();
+	@GetMapping("/getAllMoviesInfo")
+	public List<Movie> getMovies() {
+		return movieRepository.findAll();
 	}
 
-	@GetMapping("/getMovie/{id}")
-	public Optional<Movie> getMovie(@PathVariable String id) {
-		return movieRepository.findById(id);
+	@GetMapping("/getMovieInfo/{movieId}")
+	public Optional<Movie> getMovie(@PathVariable String movieId) {
+			System.out.println("---------------------- inside info 1 ----------------------");
+		return movieRepository.findById(movieId);
 	}
 
 

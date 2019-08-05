@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservices</groupId>
-	<artifactId>movie-data-service</artifactId>
+	<artifactId>ratings-data-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>movie-data-service</name>
+	<name>ratings-data-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -33,6 +33,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 	</dependencies>
 
